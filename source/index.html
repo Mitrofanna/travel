@@ -12,8 +12,149 @@
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
     <title>LifeTour</title>
 </head>
-<body>
-    <h1 class="head"></h1>
+<body class="page">
+    <header class="page__header header">
+        <button class="header__button">
+            <span class="visually-hidden">Открыть/Закрыть меню.</span>
+        </button>
+        <img class="header__logo" src="#" width="" height="" alt="Логотип компании. LIFETOUR - организация походов в горы.">
+        <a class="header__phone" href="tel:88007253232">8 800 725 32 32</a>.
+    </header>
+    <main class="page__main">
+        <section class="promo">
+            <h1 class="visually-hidden">Наши туры.</h1>
+            <div class="promo__container">
+                <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
+                <p class="promo__description">В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                <button type="button" class="promo__button">Смотреть тур</button>
+            </div>
+            <div class="promo__container">
+                <h2 class="promo__title">Невероятная природа Камчатки</h2>
+                <p class="promo__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                <button type="button" class="promo__button">Смотреть тур</button>
+            </div>
+            <div class="promo__container">
+                <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
+                <p class="promo__description">Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <button type="button" class="promo__button">Смотреть тур</button>
+            </div>
+        </section>
+        <section class="tours">
+            <div class="tours__wrapper-buttons">
+                <button class="tours__button" type="button">
+                    <span class="visually-hidden">Предыдущий тур.</span>
+                </button>
+                <button class="tours__button" type="button">
+                    <span class="visually-hidden">Следующий тур.</span>
+                </button>
+            </div>
+            <div class="tours__container">
+                <span class="tours__days">4 дня</span>
+                <span class="tours__days">3 ночи</span>
+                <span class="tours__name">Кавказ</span>
+                <h2 class="tours__title">Путешествие вокруг Эльбруса</h2>
+                <p class="tours__description">Сложность</p>
+                <p class="tours__level">
+                    <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                </p>
+                <p class="tours__description">Даты набора:</p>
+                <p class="tours__about">12.06 - 19.06</p>
+                <p class="tours__description">Группа:</p>
+                <p class="tours__about">Дo 15 чел.</p>
+            </div>
+            <div class="tours__container">
+                <span class="tours__days">14 дней</span>
+                <span class="tours__days">13 ночей</span>
+                <span class="tours__name">Алтай</span>
+                <h2 class="tours__title">Путь к подножию белухи</h2>
+                <p class="tours__description">Сложность</p>
+                <p class="tours__level">
+                    <span class="visually-hidden">Уровень сложности 2 из 5.</span>
+                </p>
+                <p class="tours__description">Даты набора:</p>
+                <p class="tours__about">14.06 - 23.06</p>
+                <p class="tours__description">Группа:</p>
+                <p class="tours__about">Дo 25 чел.</p>
+            </div>
+            <div class="tours__container">
+                <span class="tours__days">7 дней</span>
+                <span class="tours__days">6 ночей</span>
+                <span class="tours__name">Адыгея</span>
+                <h2 class="tours__title">через фишт к черному морю</h2>
+                <p class="tours__description">Сложность</p>
+                <p class="tours__level">
+                    <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                </p>
+                <p class="tours__description">Даты набора:</p>
+                <p class="tours__about">15.07 - 19.07</p>
+                <p class="tours__description">Группа:</p>
+                <p class="tours__about">Дo 22 чел.</p>
+            </div>
+            <button type="button" class="tours__button">Показать все туры</button>
+        </section>
+        <section class="education">
+            <h2 class="education__title">Обучение</h2>
+            <p class="education__description">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            <h3 class="education__heading">Наши инструкторы</h3>
+            <div class="education__wrapper-button">
+                <button class="education__button" type="button">
+                    <span class="visually-hidden">Предыдущий.</span>
+                </button>
+                <button class="education__button" type="button">
+                    <span class="visually-hidden">Следующий.</span>
+                </button>
+            </div>
+            <div class="education__container">
+                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                <h3 class="education__name">Александр Прокофьев</h3>
+                <a class="education__social">
+                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                </a>
+                <p class="education__about">Строгий и внимательный инструктор, веселый и общительный человек. Любит природу. </p>
+            </div>
+            <div class="education__container">
+                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                <h3 class="education__name">Светлана Афиногенова</h3>
+                <a class="education__social">
+                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                </a>
+                <p class="education__about">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать – в этом назначение жизни.</p>
+            </div>
+            <div class="education__container">
+                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                <h3 class="education__name">Надежда Колесниченко</h3>
+                <a class="education__social">
+                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                </a>
+                <p class="education__about">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+            </div>
+            <div class="education__container">
+                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                <h3 class="education__name">Федор Кайгородов</h3>
+                <a class="education__social">
+                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                </a>
+                <p class="education__about">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+            </div>
+        </section>
+        <section class="process">
+            <h3 class="process__title">Процесс обучения</h3>
+            <ul class="process__list">
+                <li class="process__item">Изучение спортивного туристского движения</li>
+                <li class="process__item">Подготовка и техническое снаряжение в походах</li>
+                <li class="process__item">Лекции по окружающей среде, экологии  и гигиене</li>
+                <li class="process__item">Разъяснение сложности горных препятствий</li>
+            </ul>
+            <img class="process__image" src="#" width="#" height="#" alt="Группа людей спускается с горы.">
+        </section>
+        <section class="about">
+            <h2 class="about__title">О нас</h2>
+            <h3 class="about__heading"></h3>
+            <p class="about__text"></p>
+            <h3 class="about__heading"></h3>
+            <p class="about__text"></p>
+        </section>
+    </main>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
