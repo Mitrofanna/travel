@@ -1,0 +1,109 @@
+.tours {
+    margin: 0 15px 29px;
+    position: relative;
+}
+
+.tours__container {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: $color-blue;
+    background-size: 100% 100%; 
+    color: $color-white;
+}
+
+.tours__container--1 {
+    background-image: url("../img/content/tour1.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/tour1@2x.jpg");
+      }
+}
+
+.tours__container--2 {
+    background-image: url("../img/content/tour2.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/tour2@2x.jpg");
+      }
+}
+
+.tours__container--3 {
+    background-image: url("../img/content/tour3.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/tour3@2x.jpg");
+      }
+}
+
+.tours__heading {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+    padding-bottom: 28px;
+    margin: 0;
+}
+
+.tours__wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 197px 20px 27px;
+    position: relative;
+
+    @media(min-width: $vp-768) {
+        padding: 206px 20px 28px;
+    }
+}
+
+.tours__days-wrapper {
+    display: flex;
+    gap: 16px;
+    padding: 0 70px 15px 0;
+    
+    @media(min-width: $vp-768) {
+        margin-left: auto;
+        max-width: 170px;
+        padding: 0 20px 27px 0;
+        justify-content: space-between;
+        gap: 17px;
+    }
+}
+
+.tours__name {
+    padding: 9px 22px 8px 31px;
+    background-color: $color-blue;
+    margin-bottom: 15px;
+
+    @media(min-width: $vp-768) {
+        position: absolute;
+        left: 20px;
+        top: 206px;
+    }
+}
+
+.tours__title {
+    margin: 0;
+    padding-bottom: 31px;
+}
+
+.tours__list {
+    @include reset;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 15px;
+}
+
+.tours__all {
+    display: block;
+    max-width: 190px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
+    padding: 29px 15px 60px;
+}
+
+.tours__wrapper-buttons {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+}
+

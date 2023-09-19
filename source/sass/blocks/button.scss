@@ -1,0 +1,15 @@
+.button {
+    background-color: $color-blue;
+    cursor: pointer;
+    border: none;
+
+    &--next {
+        width: 37px;
+        height: 35px;
+    }
+
+    &--back {
+        width: 37px;
+        height: 35px;
+    }
+}

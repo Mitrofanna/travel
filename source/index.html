@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
@@ -40,67 +40,104 @@
             </div>
         </section>
         <section class="tours">
+            <h2 class="tours__heading">Ближайшие туры</h2>
             <div class="tours__wrapper-buttons">
-                <button class="tours__button" type="button">
+                <button class="tours__button button button--back" type="button">
                     <span class="visually-hidden">Предыдущий тур.</span>
                 </button>
-                <button class="tours__button" type="button">
+                <button class="tours__button button button--next" type="button">
                     <span class="visually-hidden">Следующий тур.</span>
                 </button>
             </div>
-            <div class="tours__container">
-                <span class="tours__days">4 дня</span>
-                <span class="tours__days">3 ночи</span>
-                <span class="tours__name">Кавказ</span>
-                <h2 class="tours__title">Путешествие вокруг Эльбруса</h2>
-                <p class="tours__description">Сложность</p>
-                <p class="tours__level">
-                    <span class="visually-hidden">Уровень сложности 3 из 5.</span>
-                </p>
-                <p class="tours__description">Даты набора:</p>
-                <p class="tours__about">12.06 - 19.06</p>
-                <p class="tours__description">Группа:</p>
-                <p class="tours__about">Дo 15 чел.</p>
+            <div class="tours__container tours__container--1">
+                <div class="tours__wrapper">
+                    <div class="tours__days-wrapper">
+                        <span class="tours__days">4 дня</span>
+                        <span class="tours__days">3 ночи</span>
+                    </div>
+                    <span class="tours__name">Кавказ</span>
+                    <h2 class="tours__title">Путешествие вокруг Эльбруса</h2>
+                    <ul class="tours__list">
+                        <li class="tours__item">
+                            <p class="tours__description">Сложность</p>
+                            <p class="tours__level">
+                                <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                            </p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Даты набора:</p>
+                            <p class="tours__about">12.06 - 19.06</p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Группа:</p>
+                            <p class="tours__about">Дo 15 чел.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="tours__container">
-                <span class="tours__days">14 дней</span>
-                <span class="tours__days">13 ночей</span>
-                <span class="tours__name">Алтай</span>
-                <h2 class="tours__title">Путь к подножию белухи</h2>
-                <p class="tours__description">Сложность</p>
-                <p class="tours__level">
-                    <span class="visually-hidden">Уровень сложности 2 из 5.</span>
-                </p>
-                <p class="tours__description">Даты набора:</p>
-                <p class="tours__about">14.06 - 23.06</p>
-                <p class="tours__description">Группа:</p>
-                <p class="tours__about">Дo 25 чел.</p>
+            <div class="tours__container tours__container--2">
+                <div class="tours__wrapper">
+                    <div class="tours__days-wrapper">
+                        <span class="tours__days">14 дней</span>
+                        <span class="tours__days">13 ночей</span>
+                    </div>
+                    <span class="tours__name">Алтай</span>
+                    <h2 class="tours__title">Путь к подножию белухи</h2>
+                    <ul class="tours__list">
+                        <li class="tours__item">
+                            <p class="tours__description">Сложность</p>
+                            <p class="tours__level">
+                                <span class="visually-hidden">Уровень сложности 2 из 5.</span>
+                            </p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Даты набора:</p>
+                            <p class="tours__about">14.06 - 23.06</p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Группа:</p>
+                            <p class="tours__about">Дo 25 чел.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="tours__container">
-                <span class="tours__days">7 дней</span>
-                <span class="tours__days">6 ночей</span>
-                <span class="tours__name">Адыгея</span>
-                <h2 class="tours__title">через фишт к черному морю</h2>
-                <p class="tours__description">Сложность</p>
-                <p class="tours__level">
-                    <span class="visually-hidden">Уровень сложности 3 из 5.</span>
-                </p>
-                <p class="tours__description">Даты набора:</p>
-                <p class="tours__about">15.07 - 19.07</p>
-                <p class="tours__description">Группа:</p>
-                <p class="tours__about">Дo 22 чел.</p>
+            <div class="tours__container tours__container--3">
+                <div class="tours__wrapper">
+                    <div class="tours__days-wrapper">
+                        <span class="tours__days">7 дней</span>
+                        <span class="tours__days">6 ночей</span>
+                    </div>
+                    <span class="tours__name">Адыгея</span>
+                    <h2 class="tours__title">через фишт к черному морю</h2>
+                    <ul class="tours__list">
+                        <li class="tours__item">
+                            <p class="tours__description">Сложность</p>
+                            <p class="tours__level">
+                                <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                            </p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Даты набора:</p>
+                            <p class="tours__about">15.07 - 19.07</p>
+                        </li>
+                        <li class="tours__item">
+                            <p class="tours__description">Группа:</p>
+                            <p class="tours__about">Дo 22 чел.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button type="button" class="tours__button">Показать все туры</button>
+            <a class="tours__all" href="#">Показать все туры</a>
         </section>
         <section class="education">
             <h2 class="education__title">Обучение</h2>
             <p class="education__description">Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
             <h3 class="education__heading">Наши инструкторы</h3>
             <div class="education__wrapper-button">
-                <button class="education__button" type="button">
+                <button class="education__button button button--back" type="button">
                     <span class="visually-hidden">Предыдущий.</span>
                 </button>
-                <button class="education__button" type="button">
+                <button class="education__button button button--next" type="button">
                     <span class="visually-hidden">Следующий.</span>
                 </button>
             </div>
@@ -157,10 +194,10 @@
         <section class="review">
             <h2 class="review__title">Отзывы</h2>
             <div class="review__wrapper-button">
-                <button class="review__button" type="button">
+                <button class="review__button button button--back" type="button">
                     <span class="visually-hidden">Предыдущий.</span>
                 </button>
-                <button class="review__button" type="button">
+                <button class="review__button button button--next" type="button">
                     <span class="visually-hidden">Следующий.</span>
                 </button>
             </div>
@@ -225,11 +262,11 @@
         <section class="photo">
             <h2 class="photo__title">Фотогалерея</h2>
             <p class="photo__description">Добавляйте фото в Instagram с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот разделнашего сайта.</p>
-            <div class="photo__buttons button">
-                <button class="button__back" type="button">
+            <div class="photo__buttons">
+                <button class="button__back button button--back" type="button">
                     <span class="visually-hidden">Предыдущий.</span>
                 </button>
-                <button class="button__next" type="button">
+                <button class="button__next button button--next" type="button">
                     <span class="visually-hidden">Следующий.</span>
                 </button>
             </div>
@@ -263,42 +300,42 @@
             </ul>
             <div class="contacts__map"></div>
         </section>
-        <footer class="footer">
+        <footer class="page__footer footer">
             <img class="footer__logo">
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__item">
-                        <a class="footer__link" src="#">Туры</a>
+                        <a class="footer__link" href="#">Туры</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" src="#">Обучение</a>
+                        <a class="footer__link" href="#">Обучение</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" ыкс="#">О нас</a>
+                        <a class="footer__link" href="#">О нас</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" src="#">Отзывы</a>
+                        <a class="footer__link" href="#">Отзывы</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" src="#">Фотографии</a>
+                        <a class="footer__link" href="#">Фотографии</a>
                     </li>
                     <li class="footer__item">
-                        <a class="footer__link" src="#">Контакты</a>
+                        <a class="footer__link" href="#">Контакты</a>
                     </li>
                 </ul>
                 <ul class="footer__social">
                     <li class="footer__social-item">
-                        <a class="footer__social-link" src="#">
+                        <a class="footer__social-link" href="#">
                             <span class="visually-hidden">Мы в ВКонтакте.</span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-link" src="#">
+                        <a class="footer__social-link" href="#">
                             <span class="visually-hidden">Мы в Одноклассниках.</span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-link" src="#">
+                        <a class="footer__social-link" href="#">
                             <span class="visually-hidden">Мы в Reddit.</span>
                         </a>
                     </li>
