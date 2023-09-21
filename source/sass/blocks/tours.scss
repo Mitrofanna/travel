@@ -5,7 +5,7 @@
 
 .tours__container {
     background-repeat: no-repeat;
-    width: 100%;
+    max-width: 400px;
     background-color: $color-blue;
     background-size: 100% 100%; 
     color: $color-white;
@@ -17,6 +17,22 @@
     @media (min-resolution: 2dppx) {
         background-image: url("../img/content/tour1@2x.jpg");
       }
+
+      @media(min-width: $vp-768) {
+        background-image: url("../img/content/tour1-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour1-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        background-image: url("../img/content/tour1-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour1-desktop@2x.jpg");
+          }
+      } 
 }
 
 .tours__container--2 {
@@ -25,6 +41,22 @@
     @media (min-resolution: 2dppx) {
         background-image: url("../img/content/tour2@2x.jpg");
       }
+
+      @media(min-width: $vp-768) {
+        background-image: url("../img/content/tour2-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour2-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        background-image: url("../img/content/tour2-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour2-desktop@2x.jpg");
+          }
+      }
 }
 
 .tours__container--3 {
@@ -32,6 +64,22 @@
 
     @media (min-resolution: 2dppx) {
         background-image: url("../img/content/tour3@2x.jpg");
+      }
+
+      @media(min-width: $vp-768) {
+        background-image: url("../img/content/tour3-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour3-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        background-image: url("../img/content/tour3-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/tour3-desktop@2x.jpg");
+          }
       }
 }
 
@@ -51,6 +99,7 @@
 
     @media(min-width: $vp-768) {
         padding: 206px 20px 28px;
+        margin: 0;
     }
 }
 
@@ -106,4 +155,15 @@
     top: 9px;
     right: 15px;
 }
+
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+  }
 

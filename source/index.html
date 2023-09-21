@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Montserrat-Light.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -23,108 +24,137 @@
     <main class="page__main">
         <section class="promo">
             <h1 class="visually-hidden">Наши туры.</h1>
-            <div class="promo__container">
-                <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
-                <p class="promo__description">В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                <button type="button" class="promo__button">Смотреть тур</button>
-            </div>
-            <div class="promo__container">
-                <h2 class="promo__title">Невероятная природа Камчатки</h2>
-                <p class="promo__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                <button type="button" class="promo__button">Смотреть тур</button>
-            </div>
-            <div class="promo__container">
-                <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
-                <p class="promo__description">Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                <button type="button" class="promo__button">Смотреть тур</button>
-            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="promo__container swiper-slide">
+                        <h2 class="promo__title">Захватывающие вершины Кавказа</h2>
+                        <p class="promo__description">В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                        <button type="button" class="promo__button">Смотреть тур</button>
+                    </div>
+                    <div class="promo__container swiper-slide">
+                        <h2 class="promo__title">Невероятная природа Камчатки</h2>
+                        <p class="promo__description">Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                        <button type="button" class="promo__button">Смотреть тур</button>
+                    </div>
+                    <div class="promo__container swiper-slide">
+                        <h2 class="promo__title">Магические пейзажи Алтайского Края</h2>
+                        <p class="promo__description">Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                        <button type="button" class="promo__button">Смотреть тур</button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>       
         </section>
         <section class="tours">
             <h2 class="tours__heading">Ближайшие туры</h2>
-            <div class="tours__wrapper-buttons">
-                <button class="tours__button button button--back" type="button">
-                    <span class="visually-hidden">Предыдущий тур.</span>
-                </button>
-                <button class="tours__button button button--next" type="button">
-                    <span class="visually-hidden">Следующий тур.</span>
-                </button>
-            </div>
-            <div class="tours__container tours__container--1">
-                <div class="tours__wrapper">
-                    <div class="tours__days-wrapper">
-                        <span class="tours__days">4 дня</span>
-                        <span class="tours__days">3 ночи</span>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="tours__container tours__container--1">
+                        <div class="tours__wrapper">
+                            <div class="tours__days-wrapper">
+                                <span class="tours__days">4 дня</span>
+                                <span class="tours__days">3 ночи</span>
+                            </div>
+                            <span class="tours__name">Кавказ</span>
+                            <h2 class="tours__title">Путешествие вокруг Эльбруса</h2>
+                            <ul class="tours__list">
+                                <li class="tours__item">
+                                    <p class="tours__description">Сложность</p>
+                                    <p class="tours__level">
+                                        <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                                    </p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Даты набора:</p>
+                                    <p class="tours__about">12.06 - 19.06</p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Группа:</p>
+                                    <p class="tours__about">Дo 15 чел.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <span class="tours__name">Кавказ</span>
-                    <h2 class="tours__title">Путешествие вокруг Эльбруса</h2>
-                    <ul class="tours__list">
-                        <li class="tours__item">
-                            <p class="tours__description">Сложность</p>
-                            <p class="tours__level">
-                                <span class="visually-hidden">Уровень сложности 3 из 5.</span>
-                            </p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Даты набора:</p>
-                            <p class="tours__about">12.06 - 19.06</p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Группа:</p>
-                            <p class="tours__about">Дo 15 чел.</p>
-                        </li>
-                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tours__container tours__container--2">
+                        <div class="tours__wrapper">
+                            <div class="tours__days-wrapper">
+                                <span class="tours__days">14 дней</span>
+                                <span class="tours__days">13 ночей</span>
+                            </div>
+                            <span class="tours__name">Алтай</span>
+                            <h2 class="tours__title">Путь к подножию белухи</h2>
+                            <ul class="tours__list">
+                                <li class="tours__item">
+                                    <p class="tours__description">Сложность</p>
+                                    <p class="tours__level">
+                                        <span class="visually-hidden">Уровень сложности 2 из 5.</span>
+                                    </p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Даты набора:</p>
+                                    <p class="tours__about">14.06 - 23.06</p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Группа:</p>
+                                    <p class="tours__about">Дo 25 чел.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="tours__container tours__container--3">
+                        <div class="tours__wrapper">
+                            <div class="tours__days-wrapper">
+                                <span class="tours__days">7 дней</span>
+                                <span class="tours__days">6 ночей</span>
+                            </div>
+                            <span class="tours__name">Адыгея</span>
+                            <h2 class="tours__title">через фишт к черному морю</h2>
+                            <ul class="tours__list">
+                                <li class="tours__item">
+                                    <p class="tours__description">Сложность</p>
+                                    <p class="tours__level">
+                                        <span class="visually-hidden">Уровень сложности 3 из 5.</span>
+                                    </p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Даты набора:</p>
+                                    <p class="tours__about">15.07 - 19.07</p>
+                                </li>
+                                <li class="tours__item">
+                                    <p class="tours__description">Группа:</p>
+                                    <p class="tours__about">Дo 22 чел.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="tours__container tours__container--2">
-                <div class="tours__wrapper">
-                    <div class="tours__days-wrapper">
-                        <span class="tours__days">14 дней</span>
-                        <span class="tours__days">13 ночей</span>
-                    </div>
-                    <span class="tours__name">Алтай</span>
-                    <h2 class="tours__title">Путь к подножию белухи</h2>
-                    <ul class="tours__list">
-                        <li class="tours__item">
-                            <p class="tours__description">Сложность</p>
-                            <p class="tours__level">
-                                <span class="visually-hidden">Уровень сложности 2 из 5.</span>
-                            </p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Даты набора:</p>
-                            <p class="tours__about">14.06 - 23.06</p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Группа:</p>
-                            <p class="tours__about">Дo 25 чел.</p>
-                        </li>
-                    </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+            <div class="swiper">
+                <div class="tours__wrapper-all swiper-wrapper">
+                   
+                    
+                    
                 </div>
-            </div>
-            <div class="tours__container tours__container--3">
-                <div class="tours__wrapper">
-                    <div class="tours__days-wrapper">
-                        <span class="tours__days">7 дней</span>
-                        <span class="tours__days">6 ночей</span>
-                    </div>
-                    <span class="tours__name">Адыгея</span>
-                    <h2 class="tours__title">через фишт к черному морю</h2>
-                    <ul class="tours__list">
-                        <li class="tours__item">
-                            <p class="tours__description">Сложность</p>
-                            <p class="tours__level">
-                                <span class="visually-hidden">Уровень сложности 3 из 5.</span>
-                            </p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Даты набора:</p>
-                            <p class="tours__about">15.07 - 19.07</p>
-                        </li>
-                        <li class="tours__item">
-                            <p class="tours__description">Группа:</p>
-                            <p class="tours__about">Дo 22 чел.</p>
-                        </li>
-                    </ul>
+                <div class="tours__wrapper-buttons">
+                    <button class="tours__button button button--back swiper-button-prev" type="button">
+                        <span class="visually-hidden">Предыдущий тур.</span>
+                    </button>
+                    <button class="tours__button button button--next swiper-button-next" type="button">
+                        <span class="visually-hidden">Следующий тур.</span>
+                    </button>
                 </div>
             </div>
             <a class="tours__all" href="#">Показать все туры</a>
@@ -141,38 +171,48 @@
                     <span class="visually-hidden">Следующий.</span>
                 </button>
             </div>
-            <div class="education__container">
-                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
-                <h3 class="education__name">Александр Прокофьев</h3>
-                <a class="education__social">
-                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
-                </a>
-                <p class="education__about">Строгий и внимательный инструктор, веселый и общительный человек. Любит природу. </p>
-            </div>
-            <div class="education__container">
-                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
-                <h3 class="education__name">Светлана Афиногенова</h3>
-                <a class="education__social">
-                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
-                </a>
-                <p class="education__about">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать – в этом назначение жизни.</p>
-            </div>
-            <div class="education__container">
-                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
-                <h3 class="education__name">Надежда Колесниченко</h3>
-                <a class="education__social">
-                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
-                </a>
-                <p class="education__about">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
-            </div>
-            <div class="education__container">
-                <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
-                <h3 class="education__name">Федор Кайгородов</h3>
-                <a class="education__social">
-                    <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
-                </a>
-                <p class="education__about">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
-            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="education__container swiper-slide">
+                    <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                    <h3 class="education__name">Александр Прокофьев</h3>
+                    <a class="education__social">
+                        <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                    </a>
+                    <p class="education__about">Строгий и внимательный инструктор, веселый и общительный человек. Любит природу. </p>
+                  </div>
+                  <div class="education__container swiper-slide">
+                    <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                    <h3 class="education__name">Светлана Афиногенова</h3>
+                    <a class="education__social">
+                        <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                    </a>
+                    <p class="education__about">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать – в этом назначение жизни.</p>
+                  </div>
+                  <div class="education__container swiper-slide">
+                    <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                    <h3 class="education__name">Надежда Колесниченко</h3>
+                    <a class="education__social">
+                        <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                    </a>
+                    <p class="education__about">Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                  </div>
+                  <div class="education__container swiper-slide">
+                    <img class="education__img" src="#" width="#" height="#" alt="Фото инструктора.">
+                    <h3 class="education__name">Федор Кайгородов</h3>
+                    <a class="education__social">
+                        <span class="visually-hidden">Аккаунт инструктора в Вконтакте.</span>
+                    </a>
+                    <p class="education__about">Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
         </section>
         <section class="process">
             <h3 class="process__title">Процесс обучения</h3>
@@ -344,6 +384,7 @@
             <p class="footer__detail">Политика конфиденциальности</p>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
