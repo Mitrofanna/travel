@@ -6,10 +6,17 @@
     &--next {
         width: 37px;
         height: 35px;
+        background-image: url(../../img/sprite/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: scale(-1, 1);
     }
 
     &--back {
         width: 37px;
         height: 35px;
+        background-image: url(../../img/sprite/arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }

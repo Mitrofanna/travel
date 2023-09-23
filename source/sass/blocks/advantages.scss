@@ -1,0 +1,21 @@
+.advantages__title {
+    &--security::before{
+        content: url(../../img/sprite/security.svg);
+    }
+
+    &--study::before{
+        content: url(../../img/sprite/study.svg);
+    }
+
+    &--clothes::before{
+        content: url(../../img/sprite/clothes.svg);
+    }
+
+    &--road::before{
+        content: url(../../img/sprite/road.svg);
+    }
+
+    &--nature::before{
+        content: url(../../img/sprite/nature.svg);
+    }
+}

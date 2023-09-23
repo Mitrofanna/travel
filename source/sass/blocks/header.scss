@@ -3,6 +3,8 @@
     color: $color-white;
 }
 
-.header__logo {
-    fill: black;
+.header__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

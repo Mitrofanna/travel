@@ -121,6 +121,10 @@
     padding: 9px 22px 8px 31px;
     background-color: $color-blue;
     margin-bottom: 15px;
+    background-image: url(../../img/sprite/pin.svg);
+    background-repeat: no-repeat;
+    background-position: 9px 12px;
+    background-size: 9px 12px;
 
     @media(min-width: $vp-768) {
         position: absolute;
@@ -162,8 +166,32 @@
     height: 100%;
   }
   
-  .swiper-slide {
+.swiper-slide {
     width: 100%;
     height: 100%;
-  }
+}
+
+.tours__level {
+    display: flex;
+}
+
+.tours__level-1 {
+    width: 38px;
+    height: 12px;
+    background-image: url(../../img/sprite/star.svg);
+
+    &--light {
+        width: 25px;
+    }
+}
+
+.tours__level-2 {
+    width: 25px;
+    height: 12px;
+    background-image: url(../../img/sprite/star-clear.svg);
+
+    &--light {
+        width: 38px;
+    }
+}
 
