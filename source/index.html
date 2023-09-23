@@ -457,7 +457,17 @@
                     <p class="contacts__text">г. Москва, пр-т Мира, д. 14, офис 101</p>
                 </li>
             </ul>
-            <div class="contacts__map"></div>
+            <div class="contacts__map">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/content/map.webp 1x, img/content/map@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="./img/content/map-desktop.jpg 1x, ./img/content/map-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/content/map-tablet.jpg 1x, ./img/content/map-tablet@2x.jpg 2x">
+                  <img class="contacts__image" src="./img/content/map.jpg" srcset="./img/content/map@2x.jpg 2x" width="290" height="320" alt="Адрес магазина г. Москва, проспект Мира, 14">
+                </picture>
+                <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6092.739021177821!2d37.62501064514997!3d55.773683915046014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a6e17875109%3A0x390d6670ee1585e5!2z0L_RgC3RgiDQnNC40YDQsCwgMTQsINCc0L7RgdC60LLQsCwgMTI5MDkw!5e0!3m2!1sru!2sru!4v1695504591614!5m2!1sru!2sru" width="290" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Адрес компании - г. Москва, проспект Мира, 14"></iframe>
+              </div>
         </section>
         <footer class="page__footer footer">
             <a class="footer__logo" href="index.html">
