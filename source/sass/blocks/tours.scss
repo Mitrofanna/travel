@@ -19,9 +19,11 @@
       }
 
       @media(min-width: $vp-768) {
+        max-width: 1000px;
         background-image: url("../img/content/tour1-tablet.jpg");
 
         @media (min-resolution: 2dppx) {
+            max-width: 1440px;
             background-image: url("../img/content/tour1-tablet@2x.jpg");
           }
       }

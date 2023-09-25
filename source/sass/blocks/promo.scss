@@ -1,0 +1,85 @@
+.promo__container {
+    background-repeat: no-repeat;
+    max-width: 400px;
+    background-color: $color-blue;
+    background-size: 100% 100%; 
+    color: $color-white; 
+}
+
+.promo__container--1 {
+    background-image: url("../img/content/promo.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/promo@2x.jpg");
+      }
+
+      @media(min-width: $vp-768) {
+        max-width: 1000px;
+        background-image: url("../img/content/promo-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        max-width: 1440px;
+        background-image: url("../img/content/promo-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo-desktop@2x.jpg");
+          }
+      } 
+}
+
+.promo__container--2 {
+    background-image: url("../img/content/promo2.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/promo2@2x.jpg");
+      }
+
+      @media(min-width: $vp-768) {
+        max-width: 1000px;
+        background-image: url("../img/content/promo2-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo2-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        max-width: 1440px;
+        background-image: url("../img/content/promo2-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo2-desktop@2x.jpg");
+          }
+      } 
+}
+
+.promo__container--3 {
+    background-image: url("../img/content/promo3.jpg");
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/content/promo3@2x.jpg");
+      }
+
+      @media(min-width: $vp-768) {
+        max-width: 1000px;
+        background-image: url("../img/content/promo3-tablet.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo3-tablet@2x.jpg");
+          }
+      }
+
+      @media(min-width: $vp-1440) {
+        max-width: 1440px;
+        background-image: url("../img/content/promo3-desktop.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/content/promo3-desktop@2x.jpg");
+          }
+      } 
+}
