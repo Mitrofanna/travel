@@ -4,6 +4,7 @@
     background-color: $color-blue;
     background-size: 100% 100%; 
     color: $color-white; 
+    text-align: center;
 }
 
 .promo__container--1 {
@@ -82,4 +83,97 @@
             background-image: url("../img/content/promo3-desktop@2x.jpg");
           }
       } 
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 15px;
+  padding-top: 70px;
+
+  @media(min-width: $vp-768) {
+    font-size: 56px;
+    line-height: 56px;
+    padding-top: 100px;
+  }
+
+  @media(min-width: $vp-1440) {
+    font-size: 77px;
+    line-height: 77px;
+    padding-bottom: 25px;
+    padding-top: 80px;
+  }
+}
+
+.promo__description {
+  font-size: 15px;
+  margin-bottom: 20px;
+
+  @media(min-width: $vp-768) {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  @media(min-width: $vp-1440) {
+    margin-bottom: 35px;
+  }
+}
+
+.promo__button {
+  padding: 18px;
+  text-align: center;
+  width: 180px;
+  height: 52px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 172px;
+
+  @media(min-width: $vp-768) {
+    width: 206px;
+    height: 58px;
+    margin-bottom: 568px;
+  }
+
+  @media(min-width: $vp-1440) {
+    margin-bottom: 150px;
+  }
+}
+
+.promo__details-wrapper {
+  display: none;
+  gap: 10px;
+  padding-bottom: 80px;
+
+  @media(min-width: $vp-1440) {
+    display: flex;
+  }
+}
+
+.promo__details {
+  border: 1px solid $color-white;
+  opacity: 50%;
+  box-sizing: border-box;
+  height: 44px;
+  padding-top: 14px;
+  font-size: 12px;
+  line-height: 16px;
+  display: inline-block;
+
+  &--moon {
+    background-image: url("../../img/sprite/moon-mini.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 14px;
+    width: 155px;
+  }
+
+  &--level {
+    background-image: url("../../img/sprite/level.svg");
+    background-repeat: no-repeat;
+    background-position: 12px 14px;
+    width: 184px;
+  }
 }
